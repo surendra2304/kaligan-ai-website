@@ -45,3 +45,14 @@
   justify-content: center !important;
   gap: 20px !important;
 }
+
+/* Fix for dropdown hover gap */
+.nav-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  height: 20px;
+  z-index: 10;
+}
